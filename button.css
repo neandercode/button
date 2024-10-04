@@ -1,4 +1,14 @@
-button {
-border-radius: 3px;
-color: turquoise;
+input {
+  all: unset;
+  color: #fff;
+  border: 1px solid #999797;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border-image-slice: 1; /* Required for border-image to work */
+}
+
+input:focus {
+  border-width: 2px; /* Set the desired width of the border */
+  border-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) 1;
+  transition: all 0.3s ease; /* Increased time to make the transition smoother */
 }
